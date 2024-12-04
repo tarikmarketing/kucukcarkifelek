@@ -1,0 +1,655 @@
+<html class="js" lang="tr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <title>
+   Çarkı çevir! Hediyeleri topla!
+  </title>
+  <meta content="" name="description"/>
+  <meta content="" name="keywords"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="true" name="HandheldFriendly"/>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <link href="mainkd8i6.min.css" rel="stylesheet" type="text/css"/>
+  <!--<![endif]-->
+  <meta content="#{data.title}" property="og:title"/>
+  <meta content="" property="og:title"/>
+  <meta content="" property="og:url"/>
+  <meta content="" property="og:description"/>
+  <meta content="" property="og:image"/>
+  <meta content="image/jpeg" property="og:image:type"/>
+  <meta content="500" property="og:image:width"/>
+  <meta content="300" property="og:image:height"/>
+  <meta content="" property="twitter:description"/>
+  <link href="" rel="image_src"/>
+  <link href="/favicon.gif" rel="icon" type="image/x-icon"/>
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <script src="mainkd8i6.min.js">
+  </script>
+  <style id="operaUserStyle" type="text/css">
+   video {
+      filter: -opera-shader(url(data:text/plain;base64,dW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmhhbGYzIHBpeGVsKGNvbnN0IGludCB4LCBjb25zdCBpbnQgeSwgaW4gaGFsZjIgeHkpCnsKCXJldHVybiBpQ2h1bmsuZXZhbCh4eSArIGhhbGYyKHgsIHkpKS5yZ2I7Cn0gIAoKaGFsZjMgUkdYKGhhbGYyIHh5KXsKCWhhbGYzIGYgPQoJcGl4ZWwoLTEsLTEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwtMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsLTEsIHh5KSAqICAxLiArCgkKCXBpeGVsKC0xLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMCwgeHkpICogLTIuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJCglwaXhlbCgtMSwgMSwgeHkpICogIDEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAwLCAxLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsIDEsIHh5KSAqICAxLgoJOwoJcmV0dXJuIGYgLyAtMjsKfQoKaGFsZjMgUkdYTW9yZShoYWxmMiB4eSl7CgloYWxmMyBmID0KCXBpeGVsKC0xLC0xLCB4eSkgKiAgMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsLTEsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLC0xLCB4eSkgKiAgMS4gKwoJCglwaXhlbCgtMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsIDAsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCQoJcGl4ZWwoLTEsIDEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAxLCB4eSkgKiAgMS4gCgk7CglyZXR1cm4gZiAvIC0xOwp9CgoKaGFsZjQgbWFpbihmbG9hdDIgeHkpCnsKCWhhbGY0IGNvbG9yID0gaUNodW5rLmV2YWwoeHkpOwoJCglpZiAoY29sb3IuYSA8IDEpIHsKCQlyZXR1cm4gY29sb3I7Cgl9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPCBNSU5fQVJFQSkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoaUNodW5rU2l6ZS55IDwgTUlOX1NUUklQIHx8IGlDaHVua1NpemUueCA8IE1JTl9TVFJJUCkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoeHkueCA8IE1BUkdJTiB8fCB4eS54ID4gKGlDaHVua1NpemUueCAtIE1BUkdJTikgfHwKCSAgICB4eS55IDwgTUFSR0lOIHx8IHh5LnkgPiAoaUNodW5rU2l6ZS55IC0gTUFSR0lOKSkgewogICAgCXJldHVybiBjb2xvcjsgICAgCiAgICB9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPiBUSFJFU0hPTERfQVJFQSkgewoJCWNvbG9yID0gaGFsZjQoUkdYTW9yZSh4eSksIDEpOwoJfSBlbHNlIHsKCQljb2xvciA9IGhhbGY0KFJHWCh4eSksIDEpOwoJfQoKCXJldHVybiBjb2xvcjsKfQo=));
+    }
+  </style>
+  <script>
+   (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+  </script>
+ </head>
+ <body class="page">
+  <script>
+   window.phonePattern = /^([0-9]{12})?(\+[0-9]{12})?$/i;
+              window.links =  {
+                  site: 'https://kisalt.gg/tumblr',
+                  phone: 'https://kisalt.gg/tumblr',
+                  email: 'https://kisalt.gg/tumblr'
+              }
+              window.pageState = {
+                  locCountries: {'AC':'YükselişAdası','AD':'Andorra','AE':'BAE','AF':'Afganistan','AG':'Antigua ve Barbuda','AI':'Anguilla','AL':'Arnavutluk','AM':'Ermenistan','AO':'Angora','AQ':'Antarktika','AR':'Arjantin','AS':'Amerikan Samoası','AT':'Avusturya','AU':'Avustralya','AW':'Aruba','AX':'Alandadaları','AZ':'Azerbeycan','BA':'Bosna Hersek','BB':'Barbados','BD':'Bangladeş','BE':'Belçika','BF':'Burkina Faso','BG':'Bulgaristan','BH':'Bahreyn','BI':'Burundi','BJ':'Benin','BL':'Saint Barthelemy','BM':'Bermudas','BN':'Brunei','BO':'Bolivya','BQ':'Bonaire, Sint Eustatius ve Saba','BR':'Brezilya','BS':'Bahamalar','BT':'Butan','BV':'Bouvet Adası','BW':'Botsvana','BY':'Belarus','BZ':'Belize','CA':'Kanada','CC':'Cocos (Keeling) Adaları','CD':'Kongo Demokratik Cumhuriyeti','CF':'OAC','CG':'Kongo Cumhuriyeti','CH':'İsviçre','CI':'Fildişi Sahili','CK':'Cook Adaları','CL':'Şili','CM':'Kamerun','CN':'PRC (Çin Halk Cumhuriyeti)','CO':'Columbia','CR':'Kosta Rika','CU':'Küba','CV':'Cape Verde','CW':'Curacao','CX':'Noel Adası','CY':'Kıbrıs','CZ':'Çek Cumhuriyeti','DE':'Almanya','DG':'Diego Garcia','DJ':'Cibuti','DK':'Danimarka','DM':'Dominika','DO':'Dominik Cumhuriyeti','DZ':'Cezayir','EA':'Ceutave Melilla','EC':'Ekvador','EE':'Estonya','EG':'Mısır','EH':'SADR','ER':'Eritre','ES':'İspanya','ET':'Etiyopya','EU':'Avrupa Birliği','FI':'Finlanda','FJ':'Fiji','FK':'Falkland Adaları','FM':'Mikronezya','FO':'Faroe Adaları','FR':'Fransa','GA':'Gabon','GB':'Great Britain','GD':'Grenada','GE':'Georgia','GF':'Guyanası','GG':'Guernsey Bailiwick','GH':'Gana','GI':'Cebelitarık','GL':'Grönland','GM':'Gambiya','GN':'Gine','GP':'Guadeloupe','GQ':'Ekvator Ginesi','GR':'Yunanistan','GS':'Güney Georgia ve Güney Sandwich Adaları','GT':'Guatemala','GU':'Guam','GW':'Gine-Bissau','GY':'Guyana','HK':'Hong Kong','HM':'Hard MacDonald','HN':'Honduras','HR':'Hırvatistan','HT':'Haiti','HU':'Macaristan','IC':'Kanarya Adaları','ID':'Endonezya','IE':'İrlanda','IL':'İsrail','IM':'Man Adası','IN':'Hindistan','IO':'Britanya Hint Okyanusu Bölgesi','IQ':'Irak','IR':'İran','IS':'İzlanda','IT':'İtalya','JE':'Jersey','JM':'Jamaika','JO':'Ürdün','JP':'Japonya','KE':'Kenya','KG':'Kırgızistan','KH':'Kamboçya','KI':'Kiribati','KM':'Komorlar','KN':'Saint Kitts ve Nevis','KP':'DPRK (Kore Demokratik Halk Cumhuriyeti)','KR':'Kore Cumhuriyeti','KW':'Kuveyt','KY':'Cayman Adaları','KZ':'Kazakistan','LA':'Laos','LB':'Lübnan','LC':'Saint Lucia','LI':'Lihtenştayn','LK':'Sri Lanka','LR':'Liberya','LS':'Lesotho','LT':'Litvanya','LU':'Lüksemburg','LV':'Letonya','LY':'Libya','MA':'Fas','MC':'Monako','MD':'Buğdan','ME':'Karadağ','MF':'Aziz Martin','MG':'Madagaskar','MH':'Marshall Adaları Cumhuriyeti','MK':'Makedonya','ML':'Mali','MM':'Myanmar','MN':'Moğolistan','MO':'Makao','MP':'Kuzey Mariana Adaları','MQ':'Martinik','MR':'Moritanya','MS':'Montserrat','MT':'Malta','MU':'Mauritius','MV':'Maldivler','MW':'Malawi','MX':'Meksika','MY':'Malezya','MZ':'Mozambik','NA':'Namibya','NC':'Yeni Kaledonya','NE':'Nijer','NF':'Norfolk Adası','NG':'Nijerya','NI':'Nikaragua','NL':'Hollanda','NO':'Norveç','NP':'Nepal','NR':'Nauru','NU':'Niue','NZ':'Yeni Zelanda','O1':'Başkabirülke','OM':'Umman','PA':'Panama','PE':'Peru','PF':'Fransız Polinezyası','PG':'Papua Yeni Gine','PH':'Filipinler','PK':'Pakistan','PL':'Polonya','PM':'Aziz Pierreve Miquelon','PN':'Pitcairn Adaları','PR':'Porto Riko','PS':'Filistin Devleti','PT':'Portekiz','PW':'Palau','PY':'Paraguay','QA':'Katar','RE':'Reunion','RO':'Romanya','RS':'Sırbistan','RU':'Rusya','RW':'Ruanda','SA':'Suudi Arabistan','SB':'Solomon Adaları','SC':'Seychelles','SD':'Sudan','SE':'İsveç','SG':'Singapur','SH':'Aziz Helena,Yükselişve Tristanda Cunha','SI':'Slovenya','SJ':'Spitsbergen ve Jan Mayen','SK':'Slovakya','SL':'Sierra Leone','SM':'San Marco','SN':'Senegal','SO':'Somali','SR':'Surinam','SS':'Güney Sudan','ST':'Sao Tomave Principe','SU':'SSCB','SV':'El Salvador','SX':'Sint Maarten','SY':'Suriye','SZ':'Svaziland','TA':'Tristan Da Cunha','TC':'Turksve Caicos Adaları','TD':'Çad','TF':'Fransız Güney ve Antarktika Toprakları','TG':'Gitmek','TH':'Tayland','TJ':'Tacikistan','TK':'Tokelau','TL':'DoğuTimor','TM':'Türkmenistan','TN':'Tunus','TO':'Tonga','TR':'Türkiye','TT':'Trinidad ve Tobago Cumhuriyeti','TV':'Tuvalu','TW':'Çin Cumhuriyeti','TZ':'Tanzanya','UA':'Ukrayna','UG':'Uganda','UM':'Dış ve Küçük Adalar (ABD)','US':'Amerika Birleşik Devletleri','UY':'Uruguay','UZ':'Özbekistan','VA':'Vatikan','VC':'Saint Vincent ve Grenadinler','VE':'Venezuela','VG':'İngiliz  Virgin Adaları','VI':'Amerika Birleşik Devletleri Virjin Adaları','VN':'Vietnam','VU':'Vanuatu','WF':'Wallis ve Futuna','WS':'Samoa','XK':'Kosova','YE':'Yemen','YT':'Mayotte','ZA':'Güney Afrika Cumhuriyeti','ZM':'Zambiya','ZW':'Zimbabve'},
+                  text: {
+                      warn: {
+                          rules: 'Tebrikler! 1111 Free Spin!',
+                          inputRightPhone: 'Tebrikler! 1111 Free Spin!',
+                          inputRightEmail: 'Tebrikler! 1111 Free Spin!',
+                          inputPassword: 'Tebrikler! 1111 Free Spin!',
+                          passwordShort: 'Tebrikler! 1111 Free Spin!',
+                          passwordLong: 'Tebrikler! 1111 Free Spin!',
+              
+                              }
+                          }
+              }
+  </script>
+  <script>
+   (function() {
+                  window.landingname = 'tr--wheel';
+                  window.pagehref = window.links.site;
+              
+              
+                  function getCookie(name) {
+                    var matches = document.cookie.match(new RegExp(
+                      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                    ));
+                    return matches ? decodeURIComponent(matches[1]) : undefined;
+                  }
+                  window.getCookie = function(name) {
+                    var matches = document.cookie.match(new RegExp(
+                      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                    ));
+                    return matches ? decodeURIComponent(matches[1]) : undefined;
+                  }
+                  window.setCookie = function(name, value, options) {
+                        options = options || {};
+                        var expires = options.expires;
+                        if (typeof expires == "number" && expires) {
+                          var d = new Date();
+                          d.setTime(d.getTime() + expires * 1000);
+                          expires = options.expires = d;
+                        }
+                        if (expires && expires.toUTCString) {
+                          options.expires = expires.toUTCString();
+                        }
+                        value = encodeURIComponent(value);
+                        var updatedCookie = name + "=" + value;
+                        for (var propName in options) {
+                          updatedCookie += "; " + propName;
+                          var propValue = options[propName];
+                          if (propValue !== true) {
+                            updatedCookie += "=" + propValue;
+                          }
+                      }
+                      document.cookie = updatedCookie;
+                  }
+              
+              
+                  if(getCookie(window.landingname)){
+                      window.location.href = window.pagehref + getCookie(window.landingname);
+                  }
+              
+              })()
+  </script>
+  <main class="main ru">
+   <div class="main__container animatedParent appearing-anim ru">
+    <div class="main__intro">
+     <div class="modal">
+      <div class="subheader">
+       <h2 class="subheader__item">
+        Tebrikler!
+       </h2>
+       <h3 class="subheader__item">
+        Kazandınız:
+       </h3>
+       <h4 class="subheader__item">
+        1111 Free Spin
+       </h4>
+       <h5>
+        
+        <span>
+         
+        </span>
+       </h5>
+       <div class="popup__achievements">
+        <div class="achievements__item first-item">
+         <img class="achievements__img" src="/bonus25000.png"/>
+        </div>
+        <div class="achievements__item last-item">
+         <img class="achievements__img" src="/250fs.png"/>
+        </div>
+       </div>
+      </div>
+      <div style="display: none;">
+       <ul class="regnav">
+        <li class="regnav__item">
+         <button class="regnav__button" id="reg-btn-tel">
+          Telefon ile
+         </button>
+        </li>
+        <li class="regnav__item">
+         <button class="active regnav__button" id="reg-btn-email">
+          E-posta ile
+         </button>
+        </li>
+       </ul>
+      </div>
+      <div class="forms">
+       <form action="https://kisalt.gg/tumblr" id="phone-form" method="post" name="form-reg">
+        <div style="display: none;">
+         <div class="phone-inputs">
+          <h3 class="form-header__phone">
+           Telefon numaranızı girin
+          </h3>
+          <div class="select select--phone">
+           <div class="select__main">
+            <img class="select__main-logo js--phone" height="32" src="/turkey.png" width="43"/>
+            <input class="select__form js--phoneInput" data-property="default" id="phone-id" minlength="3" name="phone" required="" tabindex="-1" type="tel" value="+90"/>
+            <button aria-label="Открыть список стран" class="select__btn js--ctrl js--phone" type="button">
+            </button>
+           </div>
+           <ul class="select__list">
+           </ul>
+          </div>
+          <div class="select--currency js--select--currency">
+           <button class="select--currency__main js--ctrl" type="button">
+            <div class="select--currency__placeholder currency--item__wrapper">
+             <div class="select--currency--item__icon item__icon--try">
+             </div>
+             <div class="select--currency--item__name">
+              TRY
+             </div>
+             <div class="select--currency--item__text">
+              Türk lirası
+             </div>
+            </div>
+            <input class="select--currency__form" data-property="TRY" name="currency" tabindex="-1" value="TRY"/>
+            <input id="backurl" name="backurl" type="hidden" value=""/>
+            <input id="lang" name="lang" type="hidden" value=""/>
+            <input id="st" name="st" type="hidden" value=""/>
+            <input id="s1" name="s1" type="hidden" value=""/>
+            <input id="s2" name="s2" type="hidden" value=""/>
+            <input id="s3" name="s3" type="hidden" value=""/>
+            <input id="s4" name="s4" type="hidden" value=""/>
+            <input id="s5" name="s5" type="hidden" value=""/>
+            <input id="pc" name="pc" type="hidden" value=""/>
+            <input id="form_email" name="form_email" type="hidden" value=""/>
+            <input id="form_phone" name="form_phone" type="hidden" value=""/>
+            <input id="form_key" name="form_key" type="hidden" value=""/>
+           </button>
+           <ul class="select--currency__list select--currency__list--hidden">
+            <li class="select--currency__item currency--item__wrapper select--currency__item--active" data-value="TRY">
+             <div class="select--currency--item__icon item__icon--try">
+             </div>
+             <div class="select--currency--item__name">
+              TRY
+             </div>
+             <div class="select--currency--item__text">
+              Türk lirası
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="RUB">
+             <div class="select--currency--item__icon item__icon--rub">
+             </div>
+             <div class="select--currency--item__name">
+              RUB
+             </div>
+             <div class="select--currency--item__text">
+              Rus rublesi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="UAH">
+             <div class="select--currency--item__icon item__icon--uah">
+             </div>
+             <div class="select--currency--item__name">
+              UAH
+             </div>
+             <div class="select--currency--item__text">
+              Ukrayna Grivnası
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="BRL">
+             <div class="select--currency--item__icon item__icon--brl">
+             </div>
+             <div class="select--currency--item__name">
+              R$
+             </div>
+             <div class="select--currency--item__text">
+              Brezilya reali
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="INR">
+             <div class="select--currency--item__icon item__icon--inr">
+             </div>
+             <div class="select--currency--item__name">
+              ₹
+             </div>
+             <div class="select--currency--item__text">
+              Hint Rupisi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="PLN">
+             <div class="select--currency--item__icon item__icon--pln">
+             </div>
+             <div class="select--currency--item__name">
+              PLN
+             </div>
+             <div class="select--currency--item__text">
+              Polonya Zlotisi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="UZS">
+             <div class="select--currency--item__icon item__icon--uzs">
+             </div>
+             <div class="select--currency--item__name">
+              UZS
+             </div>
+             <div class="select--currency--item__text">
+              Özbekistan Somu
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="BGN">
+             <div class="select--currency--item__icon item__icon--bgn">
+             </div>
+             <div class="select--currency--item__name">
+              BGN
+             </div>
+             <div class="select--currency--item__text">
+              Bulgar Levası
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="MDL">
+             <div class="select--currency--item__icon item__icon--mdl">
+             </div>
+             <div class="select--currency--item__name">
+              MDL
+             </div>
+             <div class="select--currency--item__text">
+              Moldova Leyi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="AZN">
+             <div class="select--currency--item__icon item__icon--azn">
+             </div>
+             <div class="select--currency--item__name">
+              AZN
+             </div>
+             <div class="select--currency--item__text">
+              Azerbaycan Manatı
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="IDR">
+             <div class="select--currency--item__icon item__icon--idr">
+             </div>
+             <div class="select--currency--item__name">
+              Rp
+             </div>
+             <div class="select--currency--item__text">
+              Endonezya Rupiahı
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="COP">
+             <div class="select--currency--item__icon item__icon--cop">
+             </div>
+             <div class="select--currency--item__name">
+              COP
+             </div>
+             <div class="select--currency--item__text">
+              Kolombiya pesosu
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="ARS">
+             <div class="select--currency--item__icon item__icon--ars">
+             </div>
+             <div class="select--currency--item__name">
+              ARS
+             </div>
+             <div class="select--currency--item__text">
+              Arjantin pesosu
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="KZT">
+             <div class="select--currency--item__icon item__icon--kzt">
+             </div>
+             <div class="select--currency--item__name">
+              KZT
+             </div>
+             <div class="select--currency--item__text">
+              Kazak Tengesi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="USD">
+             <div class="select--currency--item__icon item__icon--usd">
+             </div>
+             <div class="select--currency--item__name">
+              USD
+             </div>
+             <div class="select--currency--item__text">
+              ABD doları
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="EUR">
+             <div class="select--currency--item__icon item__icon--eur">
+             </div>
+             <div class="select--currency--item__name">
+              EUR
+             </div>
+             <div class="select--currency--item__text">
+              Euro
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <a class="submit-btn" href="https://kisalt.gg/tumblr" type="button">
+         Ödülü Almak İçin Tıklayın!
+        </a>
+       </form>
+       <form action="https://kisalt.gg/tumblr" class="active" id="email-form" method="post" name="email-reg">
+        <div style="display: none;">
+         <div class="email-inputs">
+          <input class="email__input" id="email-input" name="email" placeholder="E-posta" required="" type="text"/>
+          <input class="pass__input" id="password-input" name="password" placeholder="Parola" required="" type="password"/>
+          <div class="select--currency js--select--currency">
+           <button class="select--currency__main js--ctrl" type="button">
+            <div class="select--currency__placeholder currency--item__wrapper">
+             <div class="select--currency--item__icon item__icon--try">
+             </div>
+             <div class="select--currency--item__name">
+              TRY
+             </div>
+             <div class="select--currency--item__text">
+              Türk lirası
+             </div>
+            </div>
+            <input class="select--currency__form" data-property="TRY" name="currency" tabindex="-1" value="TRY"/>
+            <input id="e-backurl" name="backurl" type="hidden" value=""/>
+            <input id="e-lang" name="lang" type="hidden" value=""/>
+            <input id="e-st" name="st" type="hidden" value=""/>
+            <input id="e-s1" name="s1" type="hidden" value=""/>
+            <input id="e-s2" name="s2" type="hidden" value=""/>
+            <input id="e-s3" name="s3" type="hidden" value=""/>
+            <input id="e-s4" name="s4" type="hidden" value=""/>
+            <input id="e-s5" name="s5" type="hidden" value=""/>
+            <input id="e-pc" name="pc" type="hidden" value=""/>
+            <input id="e-form_email" name="form_email" type="hidden" value=""/>
+            <input id="e-form_phone" name="form_phone" type="hidden" value=""/>
+            <input id="e-form_key" name="form_key" type="hidden" value=""/>
+           </button>
+           <ul class="select--currency__list select--currency__list--hidden">
+            <li class="select--currency__item currency--item__wrapper select--currency__item--active" data-value="TRY">
+             <div class="select--currency--item__icon item__icon--try">
+             </div>
+             <div class="select--currency--item__name">
+              TRY
+             </div>
+             <div class="select--currency--item__text">
+              Türk lirası
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="RUB">
+             <div class="select--currency--item__icon item__icon--rub">
+             </div>
+             <div class="select--currency--item__name">
+              RUB
+             </div>
+             <div class="select--currency--item__text">
+              Rus rublesi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="UAH">
+             <div class="select--currency--item__icon item__icon--uah">
+             </div>
+             <div class="select--currency--item__name">
+              UAH
+             </div>
+             <div class="select--currency--item__text">
+              Ukrayna Grivnası
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="BRL">
+             <div class="select--currency--item__icon item__icon--brl">
+             </div>
+             <div class="select--currency--item__name">
+              R$
+             </div>
+             <div class="select--currency--item__text">
+              Brezilya reali
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="INR">
+             <div class="select--currency--item__icon item__icon--inr">
+             </div>
+             <div class="select--currency--item__name">
+              ₹
+             </div>
+             <div class="select--currency--item__text">
+              Hint Rupisi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="PLN">
+             <div class="select--currency--item__icon item__icon--pln">
+             </div>
+             <div class="select--currency--item__name">
+              PLN
+             </div>
+             <div class="select--currency--item__text">
+              Polonya Zlotisi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="UZS">
+             <div class="select--currency--item__icon item__icon--uzs">
+             </div>
+             <div class="select--currency--item__name">
+              UZS
+             </div>
+             <div class="select--currency--item__text">
+              Özbekistan Somu
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="BGN">
+             <div class="select--currency--item__icon item__icon--bgn">
+             </div>
+             <div class="select--currency--item__name">
+              BGN
+             </div>
+             <div class="select--currency--item__text">
+              Bulgar Levası
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="MDL">
+             <div class="select--currency--item__icon item__icon--mdl">
+             </div>
+             <div class="select--currency--item__name">
+              MDL
+             </div>
+             <div class="select--currency--item__text">
+              Moldova Leyi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="AZN">
+             <div class="select--currency--item__icon item__icon--azn">
+             </div>
+             <div class="select--currency--item__name">
+              AZN
+             </div>
+             <div class="select--currency--item__text">
+              Azerbaycan Manatı
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="IDR">
+             <div class="select--currency--item__icon item__icon--idr">
+             </div>
+             <div class="select--currency--item__name">
+              Rp
+             </div>
+             <div class="select--currency--item__text">
+              Endonezya Rupiahı
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="COP">
+             <div class="select--currency--item__icon item__icon--cop">
+             </div>
+             <div class="select--currency--item__name">
+              COP
+             </div>
+             <div class="select--currency--item__text">
+              Kolombiya pesosu
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="ARS">
+             <div class="select--currency--item__icon item__icon--ars">
+             </div>
+             <div class="select--currency--item__name">
+              ARS
+             </div>
+             <div class="select--currency--item__text">
+              Arjantin pesosu
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="KZT">
+             <div class="select--currency--item__icon item__icon--kzt">
+             </div>
+             <div class="select--currency--item__name">
+              KZT
+             </div>
+             <div class="select--currency--item__text">
+              Kazak Tengesi
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="USD">
+             <div class="select--currency--item__icon item__icon--usd">
+             </div>
+             <div class="select--currency--item__name">
+              USD
+             </div>
+             <div class="select--currency--item__text">
+              ABD doları
+             </div>
+            </li>
+            <li class="select--currency__item currency--item__wrapper" data-value="EUR">
+             <div class="select--currency--item__icon item__icon--eur">
+             </div>
+             <div class="select--currency--item__name">
+              EUR
+             </div>
+             <div class="select--currency--item__text">
+              Euro
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <a class="submit-btn" href="https://kisalt.gg/tumblr" type="button">
+         Bonus Kazanın
+        </a>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="page__wrap">
+    <a class="logo page__logo redirectLink redirectlink" href="https://kisalt.gg/tumblr">
+     <img alt="Vippark" class="logo__img" src="/logo_kopya.png"/>
+    </a>
+    <div class="registration">
+     <span class="registration-question">
+      Zaten kayıtlı mısınız?
+     </span>
+     <br/>
+     <a class="registration-link authLink redirectlink" href="https://kisalt.gg/tumblr">
+      Sayfaya geç!
+     </a>
+    </div>
+    <div class="game-layout__panel">
+     <div class="counter">
+      <span class="counter__text">
+       Kalan deneme hakkı:
+      </span>
+      <span class="counter__value" id="counter_spin">
+       2
+      </span>
+     </div>
+    </div>
+    <div class="game-layout">
+     <div class="achievements">
+      <div class="achievements__item">
+       <img class="bonus__lights hide appearing-anim" src="/bonus25000.png"/>
+      </div>
+      <div class="achievements__item">
+       <img class="right__lights hide appearing-anim" src="/250fs.png"/>
+      </div>
+     </div>
+     <div class="game-layout__body">
+      <div class="main__circle wheel stage-1">
+       <div class="wheel__spinner-holder">
+        <img class="main__circle__img lottery" src="/wheel.png"/>
+        <div class="wheel__mask">
+        </div>
+        <div class="wheel__button-holder wheel__button-holder_blinking">
+         <button class="circle-button wheel__button" id="run-circle">
+          Çevir
+         </button>
+        </div>
+       </div>
+       <div class="wheel__win-frame">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <div class="form-notif">
+   <div class="form-notif__close">
+   </div>
+   <div class="form-notif__text">
+    Lorem ipsum
+   </div>
+  </div>
+  <script src="mainkd8i6.min.js">
+  </script>
+  <script src="mainkd8i6.min.js">
+  </script>
+  <script>
+   (function() {
+                  if(getCookie(window.landingname + '_spinned')){
+                       document.querySelector('.main').classList.add('show-popup');
+                  }
+                  var hash = window.location.search;
+                  var elements = document.querySelectorAll('.js-redirect-link');
+              
+              
+                  Array.prototype.forEach.call(elements, function(el, i){
+              
+                      el.addEventListener('click', function(){
+                          //- var cookys = window.location.search;
+                          //- window.pagehref = window.pagehref + hash;
+                          alert(hash)
+                          window.setCookie(window.landingname, hash);
+                          window.location.href = window.pagehref + hash;
+                      })
+                  });
+              
+              })();
+  </script>
+ </body>
+</html>
